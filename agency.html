@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kapient</title>
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
 
     <script>
@@ -35,6 +37,12 @@
           collapsibleDiv.classList.toggle("max-h-0");
 
           collapsibleDiv.classList.toggle("max-h-[300px]"); // Adjust the height as needed
+        });
+
+        // Initialize AOS
+        AOS.init({
+          duration: 800,
+          once: true,
         });
       });
     </script>
@@ -108,22 +116,31 @@
         <section class="mt-20">
           <h1
             class="text-white text-3xl md:text-[50px] lg:leading-[130%] text-center mt-5 font-bold max-w-[800px] mx-auto"
+            data-aos="fade-up"
           >
             Catch Hidden Website Errors Before Your Customers Do
           </h1>
 
           <p
             class="text-white text-center font-medium text-2xl md:text-xl mt-7"
+            data-aos="fade-up"
+            data-aos-delay="200"
           >
             Catch Issues Before They Become Problems
           </p>
-          <p class="text-white text-center font-light text-md md:text-xl mt-7">
+          <p
+            class="text-white text-center font-light text-md md:text-xl mt-7"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
             Automated, Continuous Monitoring That Keeps You One Step Ahead of
             Every Website Issue.
           </p>
 
           <button
             class="btn btn-white flex items-center gap-x-2 text-lg font-medium mx-auto my-7"
+            data-aos="fade-up"
+            data-aos-delay="400"
           >
             Get Started
 
@@ -137,48 +154,66 @@
     <main class="mt-[80px]">
       <div class="container">
         <section>
-          <h2 class="text-2xl lg:text-4xl font-medium text-center">
+          <h2
+            class="text-2xl lg:text-4xl font-medium text-center"
+            data-aos="fade-up"
+          >
             Works With Any Website
           </h2>
 
           <div class="flex justify-center flex-wrap gap-y-9 mt-12">
             <div
               class="basis-[calc(50%-30px)] md:basis-[calc(100%/5-40px)] lg:basis-[calc(100%/5-40px)]"
+              data-aos="fade-up"
             >
               <img src="/assets/img/wordpress.svg" alt="WordPress" />
             </div>
             <div
               class="basis-[calc(50%-30px)] md:basis-[calc(100%/5-40px)] lg:basis-[calc(100%/5-40px)]"
+              data-aos="fade-up"
+              data-aos-delay="300"
             >
               <img src="/assets/img/wix.svg" alt="Wix" />
             </div>
             <div
               class="basis-[calc(50%-30px)] md:basis-[calc(100%/5-40px)] lg:basis-[calc(100%/5-40px)]"
+              data-aos="fade-up"
+              data-aos-delay="400"
             >
               <img src="/assets/img/joomla.svg" alt="Joomla" />
             </div>
             <div
               class="basis-[calc(50%-30px)] md:basis-[calc(100%/5-40px)] lg:basis-[calc(100%/5-40px)]"
+              data-aos="fade-up"
+              data-aos-delay="500"
             >
               <img src="/assets/img/shopify.svg" alt="Shopify" />
             </div>
             <div
               class="basis-[calc(50%-30px)] md:basis-[calc(100%/5-40px)] lg:basis-[calc(100%/5-40px)]"
+              data-aos="fade-up"
+              data-aos-delay="600"
             >
               <img src="/assets/img/drupal.svg" alt="Drupal" />
             </div>
             <div
               class="basis-[calc(50%-30px)] md:basis-[calc(100%/5-40px)] lg:basis-[calc(100%/5-40px)]"
+              data-aos="fade-up"
+              data-aos-delay="700"
             >
               <img src="/assets/img/squarespace.svg" alt="Squarespace" />
             </div>
             <div
               class="basis-[calc(50%-30px)] md:basis-[calc(100%/5-40px)] lg:basis-[calc(100%/5-40px)]"
+              data-aos="fade-up"
+              data-aos-delay="800"
             >
               <img src="/assets/img/webflow.svg" alt="Webflow" />
             </div>
             <div
               class="basis-[calc(50%-30px)] md:basis-[calc(100%/5-40px)] lg:basis-[calc(100%/5-40px)]"
+              data-aos="fade-up"
+              data-aos-delay="900"
             >
               <img src="/assets/img/weebly.svg" alt="Weebly" />
             </div>
@@ -189,10 +224,16 @@
         <section
           class="flex flex-col md:flex-row justify-between gap-y-12 mt-[150px] items-start"
         >
-          <img src="/assets/icons/quote.svg" class="basis-[10%] mx-auto" />
+          <img
+            src="/assets/icons/quote.svg"
+            class="basis-[10%] mx-auto"
+            data-aos="fade-up"
+          />
 
           <p
             class="basis-[80%] text-center md:text-left text-lg md:text-2xl font-normal md:leading-[45px]"
+            data-aos="fade-up"
+            data-aos-delay="200"
           >
             As a web developer or hosting provider, you know that catching
             problems before they escalate is critical. With continuous
@@ -206,7 +247,10 @@
 
         <!-- core benefit -->
         <section class="mt-20">
-          <h2 class="text-2xl lg:text-4xl font-semibold text-center">
+          <h2
+            class="text-2xl lg:text-4xl font-semibold text-center"
+            data-aos="fade-up"
+          >
             Core Benefits
           </h2>
 
@@ -214,6 +258,7 @@
             <!-- card -->
             <div
               class="border border-[#E3E4E8] p-4 rounded-2xl basis-full md:basis-[calc(50%-20px)] lg:basis-[calc(33%-20px)]"
+              data-aos="fade-up"
             >
               <img
                 src="/assets/img/core-benefit-2/core-benefit-1.png"
@@ -235,6 +280,8 @@
             <!-- card -->
             <div
               class="border border-[#E3E4E8] p-4 rounded-2xl basis-full md:basis-[calc(50%-20px)] lg:basis-[calc(33%-20px)]"
+              data-aos="fade-up"
+              data-aos-delay="200"
             >
               <img
                 src="/assets/img/core-benefit-2/core-benefit-2.png"
@@ -257,6 +304,8 @@
             <!-- card -->
             <div
               class="border border-[#E3E4E8] p-4 rounded-2xl basis-full md:basis-[calc(50%-20px)] lg:basis-[calc(33%-20px)]"
+              data-aos="fade-up"
+              data-aos-delay="300"
             >
               <img
                 src="/assets/img/core-benefit-2/core-benefit-3.png"
@@ -286,7 +335,10 @@
 
         <!-- monitoring -->
         <section class="mt-20">
-          <h2 class="text-2xl lg:text-4xl font-semibold text-center">
+          <h2
+            class="text-2xl lg:text-4xl font-semibold text-center"
+            data-aos="fade-up"
+          >
             Why Continuous Monitoring Matters for Your Business
           </h2>
 
@@ -294,6 +346,7 @@
             <!-- card -->
             <div
               class="border border-[#E3E4E8] p-4 rounded-2xl basis-full md:basis-[calc(50%-20px)] lg:basis-[calc(33%-20px)]"
+              data-aos="fade-up"
             >
               <img
                 src="/assets/img/monitoring/monitoring-1.png"
@@ -318,6 +371,8 @@
             <!-- card -->
             <div
               class="border border-[#E3E4E8] p-4 rounded-2xl basis-full md:basis-[calc(50%-20px)] lg:basis-[calc(33%-20px)]"
+              data-aos="fade-up"
+              data-aos-delay="200"
             >
               <img
                 src="/assets/img/monitoring/monitoring-2.png"
@@ -343,6 +398,8 @@
             <!-- card -->
             <div
               class="border border-[#E3E4E8] p-4 rounded-2xl basis-full md:basis-[calc(50%-20px)] lg:basis-[calc(33%-20px)]"
+              data-aos="fade-up"
+              data-aos-delay="300"
             >
               <img
                 src="/assets/img/monitoring/monitoring-3.png"
@@ -372,6 +429,7 @@
         <!-- feature 1 -->
         <section
           class="mt-20 border flex flex-col md:flex-row justify-between items-center rounded-xl gap-y-8 p-4 md:p-6"
+          data-aos="fade-up"
         >
           <div class="basis-[calc(50%-30px)] md:pl-3">
             <span
@@ -407,7 +465,10 @@
 
         <!-- key of features -->
         <section class="mt-20">
-          <h2 class="text-2xl lg:text-4xl font-semibold text-center">
+          <h2
+            class="text-2xl lg:text-4xl font-semibold text-center"
+            data-aos="fade-up"
+          >
             Key Features of Continuous Monitoring
           </h2>
 
@@ -415,6 +476,7 @@
             <!-- card -->
             <div
               class="border border-[#E3E4E8] p-4 rounded-2xl basis-full md:basis-[calc(50%-20px)] lg:basis-[calc(33%-20px)]"
+              data-aos="fade-up"
             >
               <img
                 src="/assets/img/monitoring/monitoring-1.png"
@@ -437,6 +499,8 @@
             <!-- card -->
             <div
               class="border border-[#E3E4E8] p-4 rounded-2xl basis-full md:basis-[calc(50%-20px)] lg:basis-[calc(33%-20px)]"
+              data-aos="fade-up"
+              data-aos-delay="200"
             >
               <img
                 src="/assets/img/monitoring/monitoring-2.png"
@@ -458,6 +522,8 @@
             <!-- card -->
             <div
               class="border border-[#E3E4E8] p-4 rounded-2xl basis-full md:basis-[calc(50%-20px)] lg:basis-[calc(33%-20px)]"
+              data-aos="fade-up"
+              data-aos-delay="300"
             >
               <img
                 src="/assets/img/monitoring/monitoring-3.png"
@@ -483,7 +549,10 @@
         </section>
         <!-- end key of features  -->
 
-        <div class="bg-[#F0F3F9] rounded-2xl py-20 px-9 mt-14">
+        <div
+          class="bg-[#F0F3F9] rounded-2xl py-20 px-9 mt-14"
+          data-aos="flip-left"
+        >
           <div class="container text-center">
             <span
               class="px-4 py-2 rounded-full bg-[#537AEF29] text-primary font-medium flex w-fit mx-auto"
@@ -517,7 +586,7 @@
       </div>
 
       <!-- cta  -->
-      <div class="cta py-20 mt-14">
+      <div class="cta py-20 mt-14" data-aos="zoom-in">
         <div class="container text-center">
           <h2 class="text-2xl md:text-[40px] font-bold">
             Empower Your Team with Continuous Monitoring Today
@@ -546,6 +615,7 @@
       <!-- seamless operation -->
       <section
         class="mt-20 container border flex flex-col md:flex-row justify-between items-center rounded-xl gap-y-8 p-4 md:p-6"
+        data-aos="fade-up"
       >
         <div class="basis-[calc(50%-30px)] md:pl-3">
           <span
@@ -648,5 +718,7 @@
         </div>
       </section>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </body>
 </html>
