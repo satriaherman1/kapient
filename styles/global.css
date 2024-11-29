@@ -1,0 +1,40 @@
+@import url("fonts.css");
+
+:root {
+  --primaryColor: #537aef;
+  --primaryHover: #456bde;
+  --whiteColor: #ffffff;
+  --whiteColorHover: #ececec;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 10px 25px;
+  border-radius: 100px;
+  transition: 0.3s;
+}
+
+.btn-primary {
+  background-color: var(--primaryColor);
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: var(--primaryHover);
+}
+.btn-white {
+  background-color: var(--whiteColor);
+  color: var(--primaryColor);
+}
+
+.btn-white:hover {
+  background-color: var(--whiteColorHover);
+}
+
+/* header */
+.header {
+  background-image: url("/assets/hero-bg.svg");
+  background-position: center;
+  background-size: cover;
+}

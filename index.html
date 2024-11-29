@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kapient</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            container: {
+              center: true,
+              padding: "1rem", // Optional padding for smaller screens
+            },
+            screens: {
+              xl: "1200px", // Define the max-width for the xl breakpoint
+            },
+          },
+        },
+        plugins: [],
+      };
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const hamburgerButton = document.querySelector("#hamburger-menu");
+        const collapsibleDiv = document.querySelector("#collapsible-menu");
+
+        hamburgerButton.addEventListener("click", () => {
+          collapsibleDiv.classList.toggle("max-h-0");
+
+          collapsibleDiv.classList.toggle("max-h-[300px]"); // Adjust the height as needed
+        });
+      });
+    </script>
+
+    <style>
+      /* For smooth height transition */
+      #collapsible-menu {
+        transition: max-height 0.3s ease;
+        overflow: hidden;
+      }
+    </style>
+
+    <link rel="stylesheet" href="styles/global.css" />
+  </head>
+  <body>
+    <header class="header pt-6 pb-[120px] md:pb-[180px] relative">
+      <div class="container">
+        <!-- navbar -->
+        <nav
+          class="px-5 py-3 md:px-7 bg-white rounded-full flex justify-between items-center"
+        >
+          <img src="/assets/logo.png" class="!h-[25px] md:!h-[30px]" />
+
+          <div class="hidden md:flex gap-x-8">
+            <a href="/">Home</a>
+            <a href="/">About</a>
+            <a href="/">Service</a>
+            <a href="/">Testimonials</a>
+          </div>
+
+          <button class="btn btn-primary hidden md:block">Sign Up</button>
+
+          <!-- Hamburger Menu -->
+          <button
+            id="hamburger-menu"
+            class="block md:hidden btn btn-primary !px-2 !py-[10px]"
+          >
+            <img src="/assets/icons/hamburger.svg" alt="Menu" />
+          </button>
+        </nav>
+
+        <!-- Collapsible Menu -->
+        <div
+          id="collapsible-menu"
+          class="bg-white p-0 rounded-md mt-3 max-h-0 transition-all ease-in-out overflow-hidden md:hidden"
+        >
+          <a
+            href="/"
+            class="block px-4 py-3 hover:bg-gray-200 rounded transition-colors"
+            >Home</a
+          >
+          <a
+            href="/"
+            class="block px-4 py-3 hover:bg-gray-200 rounded transition-colors"
+            >About</a
+          >
+          <a
+            href="/"
+            class="block px-4 py-3 hover:bg-gray-200 rounded transition-colors"
+            >Service</a
+          >
+          <a
+            href="/"
+            class="block px-4 py-3 hover:bg-gray-200 rounded transition-colors"
+            >Testimonials</a
+          >
+        </div>
+        <!-- end navbar -->
+
+        <!-- header main content -->
+        <section class="mt-16">
+          <span
+            class="bg-[#FFFFFF1A] w-fit block mx-auto px-3 py-1 rounded-full text-white"
+          >
+            🎉 Never Miss a Sale Again
+          </span>
+
+          <h1
+            class="text-white text-3xl md:text-[50px] lg:leading-[130%] text-center mt-5 font-bold max-w-[800px] mx-auto"
+          >
+            Catch Hidden Website Errors Before They Cost You Business
+          </h1>
+
+          <p class="text-white text-center text-md md:text-xl mt-7">
+            Is Your Website Costing You Customers Without You Even Knowing?
+          </p>
+
+          <button
+            class="btn btn-white flex items-center gap-x-2 text-lg font-medium mx-auto my-7"
+          >
+            Get Started
+
+            <img src="/assets/icons/arrow-right.svg" class="h-4" />
+          </button>
+
+          <img
+            src="/assets/img/dashboard.png"
+            class="absolute left-1/2 -translate-x-1/2 w-[90%] max-w-[600px] -bottom-[120px] md:-bottom-[230px]"
+          />
+        </section>
+        <!-- end header main content -->
+      </div>
+    </header>
+
+    <main class="mt-[170px] md:mt-[300px]">
+      <div class="container">
+        <h2 class="text-2xl font-semibold text-center">
+          Works With Any Website
+        </h2>
+
+        <div class="flex justify-between flex-wrap mt-12">
+          <img
+            src="/assets/img/wordpress.svg"
+            class="lg:basis-[calc(100%/5+40px)]"
+          />
+          <img src="/assets/img/wix.svg" class="lg:basis-[calc(100%/5+40px)]" />
+          <img
+            src="/assets/img/joomla.svg"
+            class="lg:basis-[calc(100%/5+40px)]"
+          />
+          <img
+            src="/assets/img/shopify.svg"
+            class="lg:basis-[calc(100%/5+40px)]"
+          />
+          <img
+            src="/assets/img/drupal.svg"
+            class="lg:basis-[calc(100%/5+40px)]"
+          />
+          <img
+            src="/assets/img/wordpress.svg"
+            class="lg:basis-[calc(100%/5+40px)]"
+          />
+          <img
+            src="/assets/img/wordpress.svg"
+            class="lg:basis-[calc(100%/5+40px)]"
+          />
+          <img
+            src="/assets/img/wordpress.svg"
+            class="lg:basis-[calc(100%/5+40px)]"
+          />
+          <img
+            src="/assets/img/wordpress.svg"
+            class="lg:basis-[calc(100%/5+40px)]"
+          />
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
