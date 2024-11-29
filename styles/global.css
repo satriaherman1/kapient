@@ -38,3 +38,13 @@
   background-position: center;
   background-size: cover;
 }
+
+/* end header */
+
+/* cta */
+.cta {
+  background: url("/assets/img/bg/cta-banner.svg");
+  background-size: cover;
+  background-position: center;
+}
+/* end cta */

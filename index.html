@@ -17,6 +17,9 @@
             screens: {
               xl: "1200px", // Define the max-width for the xl breakpoint
             },
+            colors: {
+              primary: "#537AEF",
+            },
           },
         },
         plugins: [],
@@ -136,48 +139,376 @@
       </div>
     </header>
 
-    <main class="mt-[170px] md:mt-[300px]">
+    <main class="mt-[190px] md:mt-[300px]">
       <div class="container">
-        <h2 class="text-2xl font-semibold text-center">
-          Works With Any Website
-        </h2>
+        <section>
+          <h2 class="text-2xl lg:text-4xl font-medium text-center">
+            Works With Any Website
+          </h2>
 
-        <div class="flex justify-between flex-wrap mt-12">
+          <div class="flex justify-center flex-wrap gap-y-9 mt-12">
+            <div
+              class="basis-[calc(50%-30px)] md:basis-[calc(100%/5-40px)] lg:basis-[calc(100%/5-40px)]"
+            >
+              <img src="/assets/img/wordpress.svg" alt="WordPress" />
+            </div>
+            <div
+              class="basis-[calc(50%-30px)] md:basis-[calc(100%/5-40px)] lg:basis-[calc(100%/5-40px)]"
+            >
+              <img src="/assets/img/wix.svg" alt="Wix" />
+            </div>
+            <div
+              class="basis-[calc(50%-30px)] md:basis-[calc(100%/5-40px)] lg:basis-[calc(100%/5-40px)]"
+            >
+              <img src="/assets/img/joomla.svg" alt="Joomla" />
+            </div>
+            <div
+              class="basis-[calc(50%-30px)] md:basis-[calc(100%/5-40px)] lg:basis-[calc(100%/5-40px)]"
+            >
+              <img src="/assets/img/shopify.svg" alt="Shopify" />
+            </div>
+            <div
+              class="basis-[calc(50%-30px)] md:basis-[calc(100%/5-40px)] lg:basis-[calc(100%/5-40px)]"
+            >
+              <img src="/assets/img/drupal.svg" alt="Drupal" />
+            </div>
+            <div
+              class="basis-[calc(50%-30px)] md:basis-[calc(100%/5-40px)] lg:basis-[calc(100%/5-40px)]"
+            >
+              <img src="/assets/img/squarespace.svg" alt="Squarespace" />
+            </div>
+            <div
+              class="basis-[calc(50%-30px)] md:basis-[calc(100%/5-40px)] lg:basis-[calc(100%/5-40px)]"
+            >
+              <img src="/assets/img/webflow.svg" alt="Webflow" />
+            </div>
+            <div
+              class="basis-[calc(50%-30px)] md:basis-[calc(100%/5-40px)] lg:basis-[calc(100%/5-40px)]"
+            >
+              <img src="/assets/img/weebly.svg" alt="Weebly" />
+            </div>
+          </div>
+        </section>
+
+        <!-- quote -->
+        <section
+          class="flex flex-col md:flex-row justify-between gap-y-12 mt-[150px] items-start"
+        >
+          <img src="/assets/icons/quote.svg" class="basis-[10%] mx-auto" />
+
+          <p
+            class="basis-[80%] text-center md:text-left text-lg md:text-2xl font-normal md:leading-[45px]"
+          >
+            As a small business owner, you&apos;re juggling enough already. The
+            last thing you need is a broken website stopping your customers from
+            reaching you. But it happens all the time—and you may not even
+            realize it. Whether it’s slow loading pages, broken inquiry forms,
+            or unnoticed technical issues, these problems can drive your
+            customers away and cost you sales.
+          </p>
+        </section>
+        <!-- end quote -->
+
+        <!-- core benefit -->
+        <section class="mt-20">
+          <h2 class="text-2xl lg:text-4xl font-semibold text-center">
+            Core Benefits
+          </h2>
+
+          <div class="flex justify-between gap-y-5 flex-wrap mt-12">
+            <!-- card -->
+            <div
+              class="border border-[#E3E4E8] p-4 rounded-2xl basis-full md:basis-[calc(50%-20px)] lg:basis-[calc(33%-20px)]"
+            >
+              <img
+                src="/assets/img/core-benefit-1/core-benefit-1.jpeg"
+                alt=""
+                srcset=""
+              />
+
+              <section class="py-4">
+                <h3 class="font-semibold text-xl">Never Lose a Customer</h3>
+                <p class="font-light mt-4 text-[#7D8496]">
+                  We make sure your website is running smoothly, so your forms
+                  and contact info always work—meaning no more missed inquiries
+                  or lost sales.
+                </p>
+              </section>
+            </div>
+            <!-- end card -->
+            <!-- card -->
+            <div
+              class="border border-[#E3E4E8] p-4 rounded-2xl basis-full md:basis-[calc(50%-20px)] lg:basis-[calc(33%-20px)]"
+            >
+              <img
+                src="/assets/img/core-benefit-1/core-benefit-2.jpeg"
+                alt=""
+                srcset=""
+              />
+
+              <section class="py-4">
+                <h3 class="font-semibold text-xl">Boost Your Google Ranking</h3>
+                <p class="font-light mt-4 text-[#7D8496]">
+                  A fast, flawless website helps you rank higher on Google. We
+                  fix problems that could be silently hurting your visibility
+                  online.
+                </p>
+              </section>
+            </div>
+            <!-- end card -->
+            <!-- card -->
+            <div
+              class="border border-[#E3E4E8] p-4 rounded-2xl basis-full md:basis-[calc(50%-20px)] lg:basis-[calc(33%-20px)]"
+            >
+              <img
+                src="/assets/img/core-benefit-1/core-benefit-2.jpeg"
+                alt=""
+                srcset=""
+              />
+
+              <section class="py-4">
+                <h3 class="font-semibold text-xl">Never Lose a Customer</h3>
+                <p class="font-light mt-4 text-[#7D8496]">
+                  Say goodbye to awkward moments when your site crashes right as
+                  a customer is checking out or browsing your products.
+                </p>
+              </section>
+            </div>
+            <!-- end card -->
+          </div>
+        </section>
+
+        <!-- end core benefit -->
+
+        <!-- feature 1 -->
+        <section
+          class="mt-20 border flex flex-col-reverse md:flex-row justify-between items-center rounded-xl gap-y-8 p-4 md:p-6"
+        >
+          <div class="basis-[calc(50%-30px)] md:pl-3">
+            <span
+              class="px-4 py-2 rounded-full bg-[#537AEF29] text-primary font-medium"
+            >
+              Features
+            </span>
+
+            <div class="mt-10">
+              <h2 class="lg:text-[40px] font-bold leading-[130%]">
+                Real Business Consequences
+              </h2>
+
+              <p class="mt-6 font-light">
+                When your website has technical issues, it sends a message to
+                your customers—whether you mean it or not. It can look like you
+                don’t care about your online presence, or worse, that you might
+                neglect other parts of your business. A broken website can lead
+                to lost trust, missed opportunities, and a dip in sales.
+              </p>
+
+              <button class="btn btn-primary mt-10">Get Started</button>
+            </div>
+          </div>
+
           <img
-            src="/assets/img/wordpress.svg"
-            class="lg:basis-[calc(100%/5+40px)]"
+            src="/assets/img/feature-1/feature-1.png"
+            class="w-full basis-[calc(50%-30px)]"
+            alt=""
+            srcset=""
           />
-          <img src="/assets/img/wix.svg" class="lg:basis-[calc(100%/5+40px)]" />
+        </section>
+        <!-- end feature 1 -->
+        <!-- feature 1 -->
+        <section
+          class="mt-20 border flex flex-col md:flex-row justify-between items-center rounded-xl gap-y-8 p-4 md:p-6"
+        >
           <img
-            src="/assets/img/joomla.svg"
-            class="lg:basis-[calc(100%/5+40px)]"
+            src="/assets/img/feature-1/feature-2.png"
+            class="w-full basis-[calc(50%-30px)]"
+            alt=""
+            srcset=""
           />
+          <div class="basis-[calc(50%-30px)] md:pl-3">
+            <span
+              class="px-4 py-2 rounded-full bg-[#537AEF29] text-primary font-medium"
+            >
+              Features
+            </span>
+
+            <div class="mt-10">
+              <h2 class="lg:text-[40px] font-bold leading-[130%]">
+                What You Can&apos;t Afford to Miss
+              </h2>
+
+              <div
+                class="mt-6 font-normal text-[#7D8496] flex flex-col gap-y-3"
+              >
+                <div class="flex gap-x-3 items-start">
+                  <img
+                    src="/assets/icons/list.svg"
+                    class="mt-1"
+                    alt=""
+                    srcset=""
+                  />
+                  <span
+                    >Slow websites can drive away visitors. Studies show a
+                    2-second delay can increase bounce rates by over 100%.</span
+                  >
+                </div>
+                <div class="flex gap-x-3 items-start">
+                  <img
+                    src="/assets/icons/list.svg"
+                    class="mt-1"
+                    alt=""
+                    srcset=""
+                  />
+                  <span
+                    >Broken pages or forms hurt your credibility, leaving
+                    customers questioning your reliability.</span
+                  >
+                </div>
+                <div class="flex gap-x-3 items-start">
+                  <img
+                    src="/assets/icons/list.svg"
+                    class="mt-1"
+                    alt=""
+                    srcset=""
+                  />
+                  <span
+                    >Customers expect instant responses when they fill out forms
+                    or request more info. If your form is broken, you&apos;ll
+                    never know how many inquiries you’ve missed.</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- end feature 1 -->
+        <!-- feature 1 -->
+        <section
+          class="mt-20 border flex flex-col-reverse md:flex-row justify-between items-center rounded-xl gap-y-8 p-4 md:p-6"
+        >
+          <div class="basis-[calc(50%-30px)] md:pl-3">
+            <div class="mt-10">
+              <h2 class="lg:text-[40px] font-bold leading-[130%]">
+                How We Help?
+              </h2>
+
+              <p class="mt-6 font-light">
+                At Kapient, we constantly monitor and fix issues that can
+                disrupt your site’s performance. No more worrying about what’s
+                breaking behind the scenes. We’ll handle the tech, so you can
+                focus on running your business.
+              </p>
+
+              <button class="btn btn-primary mt-10">Get Started</button>
+            </div>
+          </div>
+
           <img
-            src="/assets/img/shopify.svg"
-            class="lg:basis-[calc(100%/5+40px)]"
+            src="/assets/img/feature-1/feature-3.png"
+            class="w-full basis-[calc(50%-30px)]"
+            alt=""
+            srcset=""
           />
-          <img
-            src="/assets/img/drupal.svg"
-            class="lg:basis-[calc(100%/5+40px)]"
-          />
-          <img
-            src="/assets/img/wordpress.svg"
-            class="lg:basis-[calc(100%/5+40px)]"
-          />
-          <img
-            src="/assets/img/wordpress.svg"
-            class="lg:basis-[calc(100%/5+40px)]"
-          />
-          <img
-            src="/assets/img/wordpress.svg"
-            class="lg:basis-[calc(100%/5+40px)]"
-          />
-          <img
-            src="/assets/img/wordpress.svg"
-            class="lg:basis-[calc(100%/5+40px)]"
-          />
+        </section>
+        <!-- end feature 1 -->
+      </div>
+
+      <!-- cta  -->
+      <div class="cta py-20 mt-14">
+        <div class="container text-center">
+          <h2 class="text-2xl md:text-[40px] font-bold">
+            Empower Your Team with Continuous Monitoring Today
+          </h2>
+
+          <p class="mt-6 font-light text-md md:text-xl text-[#4A5A6B]">
+            Stop reacting to issues after they’ve already impacted your clients.
+            With Kapient’s continuous monitoring, you’ll always be ahead of the
+            curve.
+          </p>
+
+          <button
+            class="btn btn-primary flex gap-x-3 items-center mx-auto mt-8"
+          >
+            Start Your Free Trial Now
+            <img
+              src="/assets/icons/arrow-right-white.svg"
+              width="20px"
+              class="text-white"
+            />
+          </button>
         </div>
       </div>
+      <!-- end cta -->
     </main>
+
+    <footer class="px-4 mt-20 container">
+      <section class="flex flex-col md:flex-row gap-y-9 justify-between">
+        <div class="basis-[30%]">
+          <img src="/assets/logo.svg" width="140px" />
+
+          <div class="mt-6 flex gap-x-4">
+            <a href="" class="p-3 rounded-full bg-[#EAEEF7]">
+              <img src="/assets/icons/facebook.svg" />
+            </a>
+            <a href="" class="p-3 rounded-full bg-[#EAEEF7]">
+              <img src="/assets/icons/twitter.svg" />
+            </a>
+            <a href="" class="p-3 rounded-full bg-[#EAEEF7]">
+              <img src="/assets/icons/instagram.svg" />
+            </a>
+          </div>
+        </div>
+        <div class="flex flex-wrap basis-[65%] justify-between">
+          <section class="lg:basis-[calc(33%-20px)]">
+            <span class="font-semibold text-2xl">Platform</span>
+
+            <div class="flex flex-col gap-y-3 mt-7 font-light">
+              <a href="">Analytics</a>
+              <a href="">Experiment</a>
+              <a href="">Customer Data Platform</a>
+              <a href="">Session Replay</a>
+            </div>
+          </section>
+          <section class="lg:basis-[calc(33%-20px)]">
+            <span class="font-semibold text-2xl">Resources</span>
+
+            <div class="flex flex-col gap-y-3 mt-7 font-light">
+              <a href="">Resources Center</a>
+              <a href="">Blog</a>
+              <a href="">Amp Champs</a>
+              <a href="">Amplitude Academy</a>
+              <a href="">Events</a>
+              <a href="">Glossary</a>
+            </div>
+          </section>
+          <section class="lg:basis-[calc(33%-20px)]">
+            <span class="font-semibold text-2xl">Partners</span>
+
+            <div class="flex flex-col gap-y-3 mt-7 font-light">
+              <a href="">Contact Us</a>
+              <a href="">Help Center</a>
+              <a href="">Customer Data Platform</a>
+              <a href="">Session Replay</a>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section
+        class="mt-16 flex flex-wrap gap-y-4 border-t py-4 justify-between font-light"
+      >
+        <span
+          >© 2024 Kapient, Inc. All rights reserved. Kapient is a registered
+          trademark of Kapient, Inc.</span
+        >
+
+        <div class="flex gap-x-3">
+          <a href="">Terms of Service</a>
+          <a href="">Privacy Notice</a>
+          <a href="">Legal</a>
+        </div>
+      </section>
+    </footer>
   </body>
 </html>
