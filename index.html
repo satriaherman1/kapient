@@ -57,67 +57,76 @@
     <link rel="stylesheet" href="styles/global.css" />
   </head>
   <body>
-    <header class="header pt-6 pb-[120px] md:pb-[180px] relative">
+    <header class="header pt-20 pb-[120px] md:pb-[180px] relative">
       <div class="container">
-        <!-- navbar -->
-        <nav
-          class="px-5 py-3 md:px-7 bg-white rounded-full flex justify-between items-center"
-        >
-          <img
-            src="/assets/logo.svg"
-            loading="lazy"
-            class="!h-[25px] md:!h-[30px]"
-          />
-
-          <div class="hidden md:flex gap-x-8">
-            <a href="/">Home</a>
-            <a href="/">About</a>
-
-            <a href="/">Support</a>
-          </div>
-
-          <div class="hidden md:flex items-center gap-x-6">
-            <a href="/">Login</a>
-
-            <button class="btn btn-primary">Sign Up</button>
-          </div>
-
-          <!-- Hamburger Menu -->
-          <button
-            id="hamburger-menu"
-            class="block md:hidden btn btn-primary !px-2 !py-[10px]"
-          >
-            <img loading="lazy" src="/assets/icons/hamburger.svg" alt="Menu" />
-          </button>
-        </nav>
-
-        <!-- Collapsible Menu -->
         <div
-          id="collapsible-menu"
-          class="bg-white p-0 rounded-md mt-3 max-h-0 transition-all ease-in-out overflow-hidden md:hidden"
+          class="navbar h-full w-full container z-20 duration-300 fixed top-7 left-1/2 -translate-x-1/2"
+          id="navbar"
         >
-          <a
-            href="/"
-            class="block px-4 py-3 hover:bg-gray-200 rounded transition-colors"
-            >Home</a
+          <nav
+            class="px-5 py-3 md:px-7 duration-300 bg-white rounded-full flex justify-between items-center"
           >
-          <a
-            href="/"
-            class="block px-4 py-3 hover:bg-gray-200 rounded transition-colors"
-            >About</a
-          >
-          <a
-            href="/"
-            class="block px-4 py-3 hover:bg-gray-200 rounded transition-colors"
-            >Support</a
-          >
+            <img
+              src="/assets/logo.svg"
+              loading="lazy"
+              class="!h-[25px] md:!h-[30px]"
+            />
 
-          <div class="border-t flex gap-x-4 p-4 items-center mt-9">
-            <button class="btn btn-primary">Sign up</button>
-            <a href="/">Login</a>
+            <div class="hidden md:flex gap-x-8">
+              <a href="/">Home</a>
+              <a href="/">About</a>
+
+              <a href="/">Support</a>
+            </div>
+
+            <div class="hidden md:flex items-center gap-x-6">
+              <a href="/">Login</a>
+
+              <button class="btn btn-primary">Sign Up</button>
+            </div>
+
+            <!-- Hamburger Menu -->
+            <button
+              id="hamburger-menu"
+              class="block md:hidden btn btn-primary !px-2 !py-[10px]"
+            >
+              <img
+                loading="lazy"
+                src="/assets/icons/hamburger.svg"
+                alt="Menu"
+              />
+            </button>
+          </nav>
+          <!-- navbar -->
+
+          <!-- Collapsible Menu -->
+          <div
+            id="collapsible-menu"
+            class="bg-white p-0 rounded-md mt-3 max-h-0 transition-all ease-in-out overflow-hidden md:hidden"
+          >
+            <a
+              href="/"
+              class="block px-4 py-3 hover:bg-gray-200 rounded transition-colors"
+              >Home</a
+            >
+            <a
+              href="/"
+              class="block px-4 py-3 hover:bg-gray-200 rounded transition-colors"
+              >About</a
+            >
+            <a
+              href="/"
+              class="block px-4 py-3 hover:bg-gray-200 rounded transition-colors"
+              >Support</a
+            >
+
+            <div class="border-t flex gap-x-4 p-4 items-center mt-9">
+              <button class="btn btn-primary">Sign up</button>
+              <a href="/">Login</a>
+            </div>
           </div>
+          <!-- end navbar -->
         </div>
-        <!-- end navbar -->
 
         <!-- header main content -->
         <section class="mt-16">
@@ -586,5 +595,6 @@
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="/script/navbar.js"></script>
   </body>
 </html>

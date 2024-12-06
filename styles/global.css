@@ -39,6 +39,18 @@
   background-size: cover;
 }
 
+.animate-navbar {
+  animation: showNavbar 1s 1;
+}
+
+@keyframes showNavbar {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 /* end header */
 
 /* cta */
